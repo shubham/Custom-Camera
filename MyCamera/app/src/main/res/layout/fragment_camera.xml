@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/outer_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context="com.example.shubham.mycamera.CameraFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@android:color/holo_orange_light">
+
+        <FrameLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:keepScreenOn="true"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/change_camera_imv"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/description_for_changing_camera"
+            android:layout_marginBottom="@dimen/start_margin"
+            android:src="@drawable/ic_camera_change"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/innerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/start_margin"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="422dp">
+
+        <TextView
+            android:id="@+id/capture_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_camera_click"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/take_a_photo"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

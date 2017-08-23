@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyCamera</string>
+    <string name="take_a_photo">Take a Photo</string>
+    <string name="description_for_changing_camera">camera change</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="preview_of_image_taken">Preview of Image taken</string>
+    <string name="retake">RETAKE</string>
+    <string name="ok">OK</string>
+    <string name="save_image_to">Save Image to</string>
+    <string name="error_in_getting_image">Error in getting Image</string>
+</resources>
